@@ -64,11 +64,13 @@ from AnkiVector.modules.helper_funcs.misc import paginate_modules
 from AnkiVector.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = f"""
-*Hellow There, I'm Anki Vector 🍑
+**🌿 හෙලෝ, මගේ නම  Sinhala Robot. 
 
-I'm a Powerfull group manager bot With Cool Modules. Made My @TeamAnkiVector
-hit /help to Find my list of available commands 🕹*
+🌷 මාව ඔබගේ Telgarm සමූහයට ඇඩ් කරහැක.**
+
 """
+
+
 
 buttons = [
     [
@@ -90,14 +92,14 @@ buttons = [
 ANKIVECTOR_STICKER = "CAACAgUAAxkBAAEEwKthkPVBp6d5T4S3dlYZM3L8BkXRNAACOAQAAryviVQbCLI09PvjAAEiBA"
 
 HELP_STRINGS = f"""
-*Main Commands :* 🤖
+*ප්‍රදාන විධාන:* 🤖
 
-✪ /start: Starts me! You've probably already used this.
-✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
-✪ /settings: 
-   ✪ in PM: will send you your settings for all supported modules.
-   ✪ in a Group: will redirect you to pm, with all that chat's settings.
+✪ /start
+✪ /help
+✪ /donate
+✪ /settings
+
+
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -106,7 +108,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [Damantha Jasinghe](t.me/Damantha_Jasinghe)"""
+Support them  [Damantha Jasinghe](t.me/HASINDU_HIMASARA)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -230,7 +232,7 @@ def start(update: Update, context: CallbackContext):
             )            
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "මම ඉන්නවා.\n⏰ මෙම වෙලාවෙ සිට\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
